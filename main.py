@@ -1,6 +1,5 @@
 #1
 numbers = []
-
 with open("text.txt") as file:
     data = file.read()
     for line in data.split():
@@ -11,7 +10,6 @@ file.close()
 
 #2
 text = input("Enter text: ")
-
 with open("data.txt", "w") as file:
    file.write(text)
 file.close()
@@ -19,7 +17,6 @@ file.close()
 #3
 N = int(input("Enter numbers: "))
 numbers = []
-
 for i in range(N):
     number = input("Enter number: ")
     numbers.append(number)
@@ -31,12 +28,12 @@ file.close()
 
 #4
 import random
-
 with open("random_numbers.txt", "w") as file:
     for i in range(100):
        number = random.randint(1, 1000)
        file.write(str(number) + "\n")
 file.close()
+
 #5
 with open("text.txt") as file:
     words = file.read().split()
@@ -45,7 +42,6 @@ file.close()
 
 #6
 numbers = []
-
 with open("text.txt") as file:
     data = file.read()
     for line in data.split():
@@ -56,7 +52,6 @@ file.close()
 
 #7
 from collections import Counter
-
 with open('text.txt', 'r') as f:
     text = f.read()
     lines = text.splitlines()
